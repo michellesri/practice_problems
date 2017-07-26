@@ -14,3 +14,29 @@ for (var i = 0; i < string.length; i++) {
   if (character.toLowerCase() === "z") {
     newString += "A";
   }
+  
+    // else if any other letter
+    else if (alphabet.indexOf(lowerChar) !== -1) {
+      var nextLetter = alphabet.charAt(alphabet.indexOf(lowerChar) + 1);
+      
+        //if following letter is a vowel, append uppercase letter to newString
+        if (vowels.indexOf(nextLetter) !== -1) {
+          newString += nextLetter.toUpperCase();
+        }
+        
+        //else append lowercase letter to newString
+        else {
+          newString += nextLetter;
+        }
+    }
+    
+    // else append character as is to newString
+    else {
+      newString += character;
+    }
+  }
+
+  return newString;
+}
+
+//console.log(LetterChanges("fun times!"));
