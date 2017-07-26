@@ -4,3 +4,13 @@ function LetterChanges (string) {
   var alphabet = "abcdefghijklmnopqrstuvwxyz";
   var vowels = "aeiou";
   var newString = "";
+  
+  //loop through every letter in the string
+for (var i = 0; i < string.length; i++) {
+  var character = string[i];
+  var lowerChar = string[i].toLowerCase();
+  
+  //if z, then append capital A to the newString variable
+  if (character.toLowerCase() === "z") {
+    newString += "A";
+  }
