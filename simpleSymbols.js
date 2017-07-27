@@ -16,3 +16,16 @@ function SimpleSymbols(str) {
     var char = str[i];
     var prevChar = str[i - 1];
     var nextChar = str[i + 1];
+  
+    //if it's a letter
+    if (alphabet.indexOf(char) !== -1) {
+      //if previous and next characters are not "+", then return false
+      if (prevChar !== "+" || nextChar !== "+") {
+        return "false";
+      }
+    }
+  }
+  return "true";     
+}
+
+//console.log(SimpleSymbols("++d+===+c++==a"));
