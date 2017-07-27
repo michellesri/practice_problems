@@ -8,3 +8,11 @@
  //     false. The string will not be empty and will have at least one letter. 
 
 function SimpleSymbols(str) { 
+  //define alphabet
+  var alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+  //loop through each character
+  for (var i = 0; i < str.length; i++) {
+    var char = str[i];
+    var prevChar = str[i - 1];
+    var nextChar = str[i + 1];
