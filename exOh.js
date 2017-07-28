@@ -6,3 +6,7 @@
 //      punctuation or numbers. For example: if str
 //       is "xooxxxxooxo" then the output should return
 //       false because there are 6 x's and 5 o's.
+
+function ExOh(str) {
+  var xCount = 0;
+  var oCount = 0;
