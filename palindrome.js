@@ -13,3 +13,17 @@ function Palindrome(str) {
       // if not a space, then append to noSpaceString;
     if (str[i] !== " ") {noSpaceString += str[i]};
   }
+
+  //loop through new string
+  for (var j = 1; j < noSpaceString.length; j++) {
+    //if the length minus counter index is not equal to counter index, return false
+    if (noSpaceString[noSpaceString.length - j] !== noSpaceString[j - 1]) {
+      return "false";
+    }
+  }
+
+  return "true";
+
+}
+
+//console.log(Palindrome("a man a plan a canal panama"));
