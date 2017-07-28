@@ -10,3 +10,18 @@
 function ExOh(str) {
   var xCount = 0;
   var oCount = 0;
+  //loop through characters in string
+  for (var i = 0; i < str.length; i++) {
+    //if x, increment x counter
+    if (str[i] === "x") {xCount++}
+    //else if o, increment o counter
+    else if (str[i] === "o") {oCount++};
+  }
+  // if xCount !== oCount, return false
+  if (xCount !== oCount) {return false;}
+
+    return true;
+
+  }
+
+  //console.log(ExOh("xxxooooxoxoxoxoxoooxxoox"));
