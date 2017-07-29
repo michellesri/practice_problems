@@ -9,3 +9,12 @@
 //     or common ratio. Arithmetic example: [2, 4, 6, 8] and Geometric
 //     example: [2, 6, 18, 54]. Negative numbers may be entered as parameters,
 //      0 will not be entered, and no array will contain all the same elements.
+
+function ArithGeo(arr) {
+  // if array length is less than 3, return -1
+  if (arr.length < 3) {
+    return -1;
+  }
+
+  var arithmetic = true;
+  var geometric = true;
