@@ -18,3 +18,8 @@ function ArithGeo(arr) {
 
   var arithmetic = true;
   var geometric = true;
+
+  //define arithmetic increment
+  var arithCount = arr[1] - arr[0];
+  //define geometric increment
+  var geoCount = arr[1] / arr[0];
