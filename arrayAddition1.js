@@ -15,3 +15,16 @@ function ArrayAdditionI(arr) {
   var largest = arr.sort(function(a,b){return a-b}).pop();
   //initialize sum variable
   var sum = 0;
+
+  //for each number in the array in turn
+  for (var i = 0; i < arr.length; i++) {
+    //set sum to be equal to currently looped num
+    sum = arr[i];
+    // sum = addition of all other numbers in turn from left to right
+    for (var j = 0; j < arr.length; j++) {
+      if (j !== i) {
+        sum += arr[j];
+        if (sum === largest) {
+          return "true";
+        }
+      }
