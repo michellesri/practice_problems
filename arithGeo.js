@@ -23,3 +23,10 @@ function ArithGeo(arr) {
   var arithCount = arr[1] - arr[0];
   //define geometric increment
   var geoCount = arr[1] / arr[0];
+
+  //loop through array
+  for (var i = 1; i < arr.length; i++) {
+    //if not arithmetic, set arithmetic to false
+    if (arr[i] - arr[i-1] !== arithCount) {arithmetic = false};
+    if (arr[i] / arr[i-1] !== geoCount) {geometric = false};
+  }
