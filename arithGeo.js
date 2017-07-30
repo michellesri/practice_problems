@@ -30,3 +30,11 @@ function ArithGeo(arr) {
     if (arr[i] - arr[i-1] !== arithCount) {arithmetic = false};
     if (arr[i] / arr[i-1] !== geoCount) {geometric = false};
   }
+
+    if (arithmetic) {return "Arithmetic"};
+    if (geometric) {return "Geometric"};
+
+    return -1;
+  }
+
+  //console.log(ArithGeo([1,2,3,100]));
