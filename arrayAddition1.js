@@ -10,3 +10,8 @@
 function ArrayAdditionI(arr) {
   //base case
   if (arr.length === 1) { return "true" }
+
+  //determine largest number and remove from array
+  var largest = arr.sort(function(a,b){return a-b}).pop();
+  //initialize sum variable
+  var sum = 0;
