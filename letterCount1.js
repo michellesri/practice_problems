@@ -18,3 +18,8 @@ function LetterCountI(str) {
   for (var i = 0; i < wordArray.length; i++) {
     var word = wordArray[i];
     var maxRepeatsInWord = 0;
+
+    // loop through each letter of word
+    for (var j = 0; j < word.length; j++) {
+      var letter = word[j];
+      var letterRepeats = 1;
