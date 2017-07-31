@@ -6,3 +6,17 @@ function SecondGreatLow(arr) {
   //loop through array to remove duplicate values
   for (var i = 0; i < array.length; i++) {
     var value = array[i];
+
+    //loop through all other values
+    for (var j = 0; j < array.length; j++) {
+      //delete duplicate array values
+      if (j !== i && array[j] === array[i]) {
+        array.splice(j,1);
+      }
+    }
+  }
+  //if array length is 2
+  if (array.length === 2) {
+    array.sort(function(a,b){return b-a});
+    return array.join(" ");
+  } 
