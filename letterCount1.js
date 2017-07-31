@@ -32,3 +32,7 @@ function LetterCountI(str) {
           }
         }
       }
+      if (letterRepeats > maxRepeatsInWord) {
+        maxRepeatsInWord = letterRepeats;
+      }
+}
