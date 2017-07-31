@@ -19,4 +19,8 @@ function SecondGreatLow(arr) {
   if (array.length === 2) {
     array.sort(function(a,b){return b-a});
     return array.join(" ");
-  } 
+  }
+  //if array length is 3
+  else if (array.length === 3) {
+    return array[1].toString() + " " + array[1].toString();
+  }
