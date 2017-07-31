@@ -24,3 +24,9 @@ function SecondGreatLow(arr) {
   else if (array.length === 3) {
     return array[1].toString() + " " + array[1].toString();
   }
+
+  //if array length is 4 or greater return string of array[1] and array[array.length - 2]
+  else if (array.length >= 4) {
+    return array[1].toString() + " " + array[array.length - 2].toString();
+  }
+}
