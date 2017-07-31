@@ -10,3 +10,11 @@
 function LetterCountI(str) {
  var maxRepeats = 1;
  var maxWord = "";
+
+ // split string into array of separate words
+  var wordArray = str.split(" ");
+
+  // loop through each word in array
+  for (var i = 0; i < wordArray.length; i++) {
+    var word = wordArray[i];
+    var maxRepeatsInWord = 0;
