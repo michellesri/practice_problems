@@ -2,3 +2,7 @@
 
 function SecondGreatLow(arr) {
   var array = arr.sort(function(a,b) {return a-b});
+
+  //loop through array to remove duplicate values
+  for (var i = 0; i < array.length; i++) {
+    var value = array[i];
