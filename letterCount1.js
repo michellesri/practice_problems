@@ -23,3 +23,12 @@ function LetterCountI(str) {
     for (var j = 0; j < word.length; j++) {
       var letter = word[j];
       var letterRepeats = 1;
+
+      // loop through all other letters in word
+      for (var k = 0; k < word.length; k++) {
+        if (k != j) {
+          if (word[k] === letter) {
+            letterRepeats++;
+          }
+        }
+      }
