@@ -2,4 +2,13 @@
 
 function DivisionStringified(num1,num2) {
   var result = Math.round((num1 / num2)).toString().split("");
-  
+
+  for (var i = 3; i < result.length; i+=4) {
+    result.splice(result.length - i, 0, ",");
+  }
+
+  return result.join("");
+
+}
+
+//console.log(DivisionStringified(123456789, 10000));
