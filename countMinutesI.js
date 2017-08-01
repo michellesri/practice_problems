@@ -22,3 +22,11 @@ function CountingMinutesI(str) {
       //remove "pm"
       array[i] = array[i].replace("pm", "");
       //12:30pm becomes 12:30
+
+      //if first two digits are not "12"
+      if (array[i].slice(0, 2) !== "12") {
+        //add 12 to the hours figure
+        array[i] = (parseInt(array[i].slice(0, 2)) + 12).toString() + array[i].slice(array[i].length - 3);
+        //1:30pm becomes 13:30
+      }
+    }
