@@ -30,3 +30,15 @@ function CountingMinutesI(str) {
         //1:30pm becomes 13:30
       }
     }
+    //if last two digits are "am"
+    if (array[i].slice(array[i].length - 2) === "am") {
+      //remove "am"
+      array[i] = array[i].replace("am", "");
+      //10:30am becomes 10:30
+
+      //if first two digits are "12"
+      if (array[i].slice(0, 2) === "12") {
+        //add 12 to the hours figure
+        array[i] = "00" + array[i].slice(2);
+      }
+    }
