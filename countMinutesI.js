@@ -13,6 +13,7 @@ function CountingMinutesI(str) {
   //split string into array of two times, separated by the dash
   var array = str.split("-");
   // ["12:30pm", "12:00am"]
+
   //convert into 24-hour time
 
   for (var i = 0; i < array.length; i++) {
@@ -30,6 +31,7 @@ function CountingMinutesI(str) {
         //1:30pm becomes 13:30
       }
     }
+
     //if last two digits are "am"
     if (array[i].slice(array[i].length - 2) === "am") {
       //remove "am"
@@ -45,10 +47,9 @@ function CountingMinutesI(str) {
 
     //["12:30", "00:15"]
 
-//replace each string with array separated by ":"
+    //replace each string with array separated by ":"
 
-  array[i] = array[i].split(":");
-
+    array[i] = array[i].split(":");
 
     //"12:30" becomes [12,30]
     //"00:15" becomes [0, 15]
@@ -59,3 +60,12 @@ function CountingMinutesI(str) {
     // [750, 15]
 
   }
+
+  if (array[0] > array[1]) {
+    return (24 * 60) - array[0] + array[1];
+  } else {
+    return array[1] - array[0];
+  }
+}
+
+//console.log(CountingMinutesI("12:30pm-12:15am"));
