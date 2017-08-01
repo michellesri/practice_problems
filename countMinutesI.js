@@ -48,3 +48,14 @@ function CountingMinutesI(str) {
 //replace each string with array separated by ":"
 
   array[i] = array[i].split(":");
+
+
+    //"12:30" becomes [12,30]
+    //"00:15" becomes [0, 15]
+
+    //replace sub-array with value in minutes
+    array[i] = ( parseInt(array[i][0]) * 60 ) + parseInt(array[i][1]);
+
+    // [750, 15]
+
+  }
