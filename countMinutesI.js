@@ -42,3 +42,9 @@ function CountingMinutesI(str) {
         array[i] = "00" + array[i].slice(2);
       }
     }
+
+    //["12:30", "00:15"]
+
+//replace each string with array separated by ":"
+
+  array[i] = array[i].split(":");
