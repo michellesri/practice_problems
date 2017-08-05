@@ -23,3 +23,17 @@ function MeanMode(arr) {
   //determine mode
   var mode = 0;
   var maxDigits = 1;
+
+  //loop through array
+  for (var j = 0; j < arr.length; j++){
+    var digit = arr[j];
+    var digitCount = 1;
+
+    //loop through all other numbers
+    for (var k = 0; k < arr.length; k++) {
+      if (k!=j) {
+        if (arr[k] === digit) {
+          digitCount++;
+        }
+      }
+    }
