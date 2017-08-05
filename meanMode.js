@@ -37,3 +37,10 @@ function MeanMode(arr) {
         }
       }
     }
+
+    //if digitCount is bigger than mode, replace mode and maxDigits counter
+    if (digitCount > maxDigits) {
+      mode = digit;
+      maxDigits = digitCount;
+    }
+  }
