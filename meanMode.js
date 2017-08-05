@@ -4,3 +4,11 @@
 //   1 because the mode (3) equals the mean (3)). The array will not
 //    be empty, will only contain positive integers, and will not
 //     contain more than one mode.
+
+function MeanMode(arr) {
+  //determine mean
+  var sum = 0;
+
+  for (var i = 0; i < arr.length; i++){
+    sum += arr[i];
+  }
