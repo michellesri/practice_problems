@@ -44,3 +44,12 @@ function MeanMode(arr) {
       maxDigits = digitCount;
     }
   }
+
+  if (mode === mean) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+
+//console.log(MeanMode([5,3,3,3,1]));
