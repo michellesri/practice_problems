@@ -19,3 +19,7 @@ function MeanMode(arr) {
   if (mean % 1 !== 0) {
     return 0;
   }
+
+  //determine mode
+  var mode = 0;
+  var maxDigits = 1;
