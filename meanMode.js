@@ -12,3 +12,10 @@ function MeanMode(arr) {
   for (var i = 0; i < arr.length; i++){
     sum += arr[i];
   }
+
+  var mean = sum / arr.length;
+
+  //if mean is not integer, return 0
+  if (mean % 1 !== 0) {
+    return 0;
+  }
