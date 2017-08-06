@@ -17,3 +17,9 @@
       output += "-";
     }
   }
+
+  return output;
+
+}
+
+//console.log(DashInsert(454793))
