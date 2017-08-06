@@ -7,3 +7,8 @@
    //convert string to array
    var array = num.toString().split("");
    var output = "";
+
+   //loop through array
+  for (var i = 0; i < array.length; i++) {
+    //add character to output
+    output += array[i];
