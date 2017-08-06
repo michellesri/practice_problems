@@ -12,3 +12,8 @@
   for (var i = 0; i < array.length; i++) {
     //add character to output
     output += array[i];
+    //if current character is odd and last character is odd
+    if (array[i] % 2 !== 0 && array[i+1] % 2 === 1) {
+      output += "-";
+    }
+  }
