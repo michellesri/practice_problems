@@ -1,3 +1,9 @@
 //Have the function DashInsert(num) insert dashes ('-') between each
  // two odd numbers in num. For example: if num is 454793 the output
  //  should be 4547-9-3. Don't count zero as an odd number.
+
+ function DashInsert(num) {
+   //convert number to string
+   //convert string to array
+   var array = num.toString().split("");
+   var output = "";
