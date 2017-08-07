@@ -4,3 +4,7 @@ function SwapCase(str) {
 
   //loop through string
   for (var i = 0; i < str.length; i++) {
+    //if character = character.toLowerChase()
+    if (str[i] === str[i].toLowerCase() ) {
+      //append character.toUpperCase();
+      newString += str[i].toUpperCase();
