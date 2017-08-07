@@ -20,3 +20,6 @@
         numString += str[i];
       }
     }
+
+    //split string into array by spaces
+    var numArray = numString.split(" ");
