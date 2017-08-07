@@ -14,3 +14,9 @@ function SwapCase(str) {
         newString += str[i].toLowerCase();
       }
     }
+
+  return newString;
+
+}
+
+// console.log(SwapCase("Hello World"));
