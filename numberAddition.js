@@ -6,4 +6,7 @@
  //     So "55Hello" and "5Hello 5" should return two different answers.
  //      Each string will contain at least one letter or symbol.
 
- 
+ function NumberAddition(str) {
+    var numbers = "0123456789";
+    var numString = "";
+    var sum = 0;
