@@ -8,3 +8,8 @@
  //       output should be after because the first three words are all
  //        5 letters long, so return the last one. The array will have
  //         at least three strings and each string will only contain letters.
+
+
+ function ThirdGreatest(strArr) {
+   //sort array in reverse element length order
+   strArr.sort(function(a,b){return b.length - a.length});
