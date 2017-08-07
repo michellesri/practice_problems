@@ -23,3 +23,10 @@
 
     //split string into array by spaces
     var numArray = numString.split(" ");
+
+    //loop through array and add up all numbers)
+    for (var j = 0; j < numArray.length; j++) {
+      if (numArray[j] !== "") {
+        sum += parseInt(numArray[j]);
+      }
+    }
