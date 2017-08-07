@@ -8,3 +8,9 @@ function SwapCase(str) {
     if (str[i] === str[i].toLowerCase() ) {
       //append character.toUpperCase();
       newString += str[i].toUpperCase();
+      //else if character = character.toUpperCase()
+      else {
+        //append character.toLowerCase();
+        newString += str[i].toLowerCase();
+      }
+    }
