@@ -13,3 +13,10 @@
  function ThirdGreatest(strArr) {
    //sort array in reverse element length order
    strArr.sort(function(a,b){return b.length - a.length});
+
+   return strArr[2];
+
+}
+
+// console.log(ThirdGreatest(["hello", "world", "before", "all"]));
+// console.log(ThirdGreatest(["hello", "world", "after", "all"]));
