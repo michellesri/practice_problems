@@ -10,3 +10,13 @@
     var numbers = "0123456789";
     var numString = "";
     var sum = 0;
+
+    //loop through string
+    for (var i = 0; i < str.length; i++) {
+      //replace every non-number character with a space
+      if (numbers.indexOf(str[i]) === -1) {
+        numString += " ";
+      } else {
+        numString += str[i];
+      }
+    }
