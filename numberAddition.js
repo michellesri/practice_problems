@@ -30,3 +30,12 @@
         sum += parseInt(numArray[j]);
       }
     }
+
+
+  return sum;
+
+}
+
+// console.log(NumberAddition("88Hello 3World"));
+// console.log(NumberAddition("55Hello"));
+// console.log(NumberAddition("5Hello 5World"));
