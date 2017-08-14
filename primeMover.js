@@ -1,3 +1,5 @@
+// return the highest prime number within another number
+
 function PrimeMover(num) {
   function isPrime(num) {
     for (var i = 2; i < num; i++) {
