@@ -8,5 +8,7 @@ function RunLength(str) {
         } else {
             result += count + str[i];
             count = 1;
-
+          }
+  }
+  return result;
 }
