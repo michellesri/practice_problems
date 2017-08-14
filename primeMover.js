@@ -5,5 +5,9 @@ function PrimeMover(num) {
           return false;
       }
     }
-  }
+    return true
+  };
+
+  var primeArr = [];
+  var cur = 2;
 }
