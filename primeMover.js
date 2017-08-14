@@ -10,4 +10,11 @@ function PrimeMover(num) {
 
   var primeArr = [];
   var cur = 2;
+  while (primeArr.length < num) {
+      if (isPrime(cur)) {
+          primeArr.push(cur);
+      }
+      cur++;
+  }
+  return primeArr.pop();
 }
