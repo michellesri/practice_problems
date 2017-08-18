@@ -7,9 +7,8 @@ function StringScramble(str1,str2) {
   var arr = [];
   for(var i = 0; i < str2.length; i++) {
     for(var j = 0; j < str1.length; j++) {
-      // if the string matches and is not already in our new array, then add it
-      if(str1.charAt(j) == str2.charAt(i) && arr.indexOf(str1.charAt(j)) == -1) {
-        arr.push(str1.charAt(j));
+      if(str1.charAt(j) == str2.charAt(i) && arr.indexOf(str1.charAt(j)) < 0) {
+        arr.push(str2.indexOf(str1.charAt(j)));
       }
     }
   }
