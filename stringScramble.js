@@ -4,9 +4,15 @@
 // and str2 is "world" the output should return true. Punctuation and symbols will not be entered with the parameters.
 
 function StringScramble(str1,str2) {
-  var arr=[];
+  var arr = [];
   for(var i = 0; i < str2.length; i++) {
     for(var j = 0; j < str1.length; j++) {
-      if(str1.charAt(j) == str2.charAt(i)) {
+      // if the string matches and is not already in our new array, then add it
+      if(str1.charAt(j) == str2.charAt(i) && arr.indexOf(str1.charAt(j)) == -1) {
         arr.push(str1.charAt(j));
       }
+    }
+  }
+
+  return str2.length == arr.length
+}
