@@ -13,3 +13,12 @@ function CountingMinutesI(str) {
   //split string into array of two times, separated by the dash
   var array = str.split("-");
   // ["12:30pm", "12:00am"]
+  //convert into 24-hour time
+
+  for (var i = 0; i < array.length; i++) {
+
+    //if last two digits are "pm"
+    if (array[i].slice(array[i].length - 2) === "pm") {
+      //remove "pm"
+      array[i] = array[i].replace("pm", "");
+      //12:30pm becomes 12:30
